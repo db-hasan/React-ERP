@@ -1,22 +1,26 @@
 import { useState } from 'react'
-import Error from './Error'
 import './App.css'
 import { BrowserRouter, Routes, Route  } from 'react-router-dom'
 import FrontHome from './Frontend/FrontHome'
-import BackHome from './Backend/BackHome'
 import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
+import Error from './Error'
+import BackHome from './Backend/BackHome'
+import Category from './Backend/Category'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<FrontHome />} />
+        <Route path="/frontend" element={<FrontHome />} />
         <Route path="/service" element={<Service />} >
           <Route path="data" element={<Dome />} />
         </Route>
-        <Route path="/backend" element={<BackHome />} />
         <Route path="*" element={<Error />} />
+        <Route path="/" element={<BackHome />} />
+        <Route path="/category" element={<Category />} />
+
+        
       </Routes>
     </BrowserRouter>
   )

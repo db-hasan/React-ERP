@@ -1,16 +1,104 @@
-.nav_bar {
-    display: flex;
-    justify-content: center;
-    background-color: aqua;
+/* Start Header*/
+
+a {
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    text-decoration: none !important;
 }
 
-.nav_bar li {
-    list-style: none;
-    padding: 20px;
-
+a:hover {
+    color: #e12c2c !important;
 }
 
-.nav_bar li a {
-    text-decoration: none;
-    padding: 20px;
+/*header part code start*/
+
+.logo {
+    color: #fff !important;
+    font-weight: 900 !important;
+    font-size: 30px !important;
+}
+
+.user {
+    text-align: end;
+}
+
+.user ul {
+    background-color: #000 !important;
+}
+
+.user-btn {
+    border: none !important;
+}
+
+.user-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* End Header*/
+
+
+/* Start Sidebar*/
+.custom .accordion-button::after {
+    height: 0;
+    width: 0;
+    color: #fff;
+}
+
+.accordion {
+    /* sub sidebar text color*/
+    --bs-accordion-btn-color: #fff;
+    /*sub category Sidebar bg color*/
+    --bs-accordion-bg: #000000d4;
+    /*Sidebar bg color*/
+    --bs-accordion-btn-bg: #e4a928be;
+    /*Sidebar active bg color*/
+    --bs-accordion-active-bg: #e7f1ff;
+}
+
+.accordion-body {
+    border-bottom: 1px #fff dashed;
+}
+
+i {
+    color: #fff !important;
+}
+
+a {
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    text-decoration: none !important;
+    font-family: 'Courier New',
+        Courier,
+        monospace;
+}
+
+/* End Sidebar*/
+
+thead,
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    padding: 5px;
+}
+
+.icons a:hover {
+    color: rgb(32, 199, 51);
+}
+
+.icons .view i {
+    color: #000 !important;
+}
+
+.icons .edit i {
+    color: #d5e219 !important;
+}
+
+.icons .delete i {
+    color: #e40a0a !important;
 }

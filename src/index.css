@@ -1,0 +1,24 @@
+.btnn {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btnn:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.rows {
+    --bs-gutter-x: 0rem;
+}
+
+a {
+    text-decoration: none;
+}
