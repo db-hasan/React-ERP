@@ -5,8 +5,12 @@ import FrontHome from './Frontend/FrontHome'
 import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
-import BackHome from './Backend/BackHome'
-import Category from './Backend/Category'
+import Dashboard from './Backend/Dashboard'
+import Category from './Backend/Category/Category'
+import Brand from './Backend/Category/Brand'
+import Subcategory from './Backend/Category/Subcategory'
+
+
 
 function App() {
   return (
@@ -17,10 +21,10 @@ function App() {
           <Route path="data" element={<Dome />} />
         </Route>
         <Route path="*" element={<Error />} />
-        <Route path="/" element={<BackHome />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/category" element={<Category />} />
-
-        
+        <Route path="/subcategory" element={<Subcategory />} />
+        <Route path="/brand" element={<Brand />} /> 
       </Routes>
     </BrowserRouter>
   )

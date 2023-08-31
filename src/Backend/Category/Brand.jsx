@@ -1,9 +1,8 @@
 import React from 'react'
-import BackHeader from './BackHeader'
-import BackFooter from './BackFooter'
-import Sidebar from './Sidebar'
-
-function Categories() {
+import BackHeader from '../BackHeader'
+import BackFooter from '../BackFooter'
+import Sidebar from '../Sidebar'
+const Brand = () => {
   return (
     <>
     <BackHeader />
@@ -14,21 +13,32 @@ function Categories() {
         <div class="col-sm-8 col-md-9 col-lg-10">
             <div class="p-4">
                 <div class="text-end">
-                <button class="btn btn-primary"><a routerLink="/addhospital" class="text-light"> Add
+                <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add
                     New</a></button>
                 </div>
                 <table class="table">
                     <thead>
                         <tr>
                             <th>#ID</th>
-                            <th>Category Name</th>
+                            <th>Brand Name</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1111</td>
-                            <td>Electronics Product</td>
+                            <td>Redmi</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1112</td>
+                            <td>Apple</td>
                             <td class="icons">
                                 <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
                                 <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
@@ -45,4 +55,4 @@ function Categories() {
   )
 }
 
-export default Categories
+export default Brand
