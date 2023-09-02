@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.css'
-import BackHeader from './Header/BackHeader'
-import BackFooter from './Footer/BackFooter'
-import Sidebar from './Sidebar/Sidebar'
+import BackHeader from './BackHeader'
+import BackFooter from './BackFooter'
+import Sidebar from './Sidebar'
 
 
 const Dashboard = () => {

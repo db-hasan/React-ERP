@@ -1,14 +1,9 @@
-thead,
-.icons {
-    text-align: center;
-}
-
 .icons a {
     padding: 5px;
 }
 
-.icons a:hover {
-    color: rgb(32, 199, 51);
+i:hover {
+    color: rgb(8, 233, 35);
 }
 
 .icons .view i {
@@ -21,4 +16,12 @@ thead,
 
 .icons .delete i {
     color: #e40a0a !important;
+}
+
+td:last-child {
+    text-align: end;
+}
+
+th:last-child {
+    text-align: end;
 }

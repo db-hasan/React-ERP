@@ -9,7 +9,6 @@ import Dashboard from './Backend/Dashboard'
 import ManageCategory from './Backend/Category/ManageCategory'
 
 
-
 function App() {
   return (
     <BrowserRouter>

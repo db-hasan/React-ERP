@@ -1,3 +1,67 @@
+/* Start Header*/
+.logo {
+    color: #fff !important;
+    font-weight: 900 !important;
+    font-size: 30px !important;
+}
+
+.user {
+    text-align: end;
+}
+
+.user ul {
+    background-color: #000 !important;
+}
+
+.user-btn {
+    border: none !important;
+}
+
+.user-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* End Header*/
+
+/* Start Sidebar*/
+.custom .accordion-button::after {
+    height: 0;
+    width: 0;
+    color: #fff;
+}
+
+.accordion {
+    /* sub sidebar text color*/
+    --bs-accordion-btn-color: #fff;
+    /*sub category Sidebar bg color*/
+    --bs-accordion-bg: #000000d4;
+    /*Sidebar bg color*/
+    --bs-accordion-btn-bg: #e4a928be;
+    /*Sidebar active bg color*/
+    --bs-accordion-active-bg: #e7f1ff;
+}
+
+.accordion-body {
+    border-bottom: 1px #fff dashed;
+}
+
+a {
+    color: #fff !important;
+}
+
+a:hover {
+    color: #e12c2c !important;
+}
+
+i {
+    color: #fff !important;
+}
+
+/* End Sidebar*/
+
+
 .dash img {
     width: 100%;
     height: 80vh;
