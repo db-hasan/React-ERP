@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './backstyle.css'
 import BackHeader from './BackHeader'
 import BackFooter from './BackFooter'
 import Sidebar from './Sidebar'
