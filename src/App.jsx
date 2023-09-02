@@ -6,7 +6,7 @@ import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
 import Dashboard from './Backend/Dashboard'
-import Category from './Backend/Category/Category'
+import ManageCategory from './Backend/Category/ManageCategory'
 
 
 
@@ -20,7 +20,7 @@ function App() {
         </Route>
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Dashboard />} />
-        <Route path="/category" element={<Category />} /> 
+        <Route path="/category" element={<ManageCategory />} /> 
       </Routes>
     </BrowserRouter>
   )
