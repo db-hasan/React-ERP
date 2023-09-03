@@ -7,6 +7,8 @@ import Dome from './Frontend/Dome'
 import Error from './Error'
 import Dashboard from './Backend/Dashboard'
 import ManageCategory from './Backend/Category/ManageCategory'
+// import ManageSubCategory from './Backend/SubCategory/ManageSubCategory'
+// import ManageBrands from './Backend/Brands/ManageBrands'
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/category" element={<ManageCategory />} /> 
+        {/* <Route path="/subcategory" element={<ManageSubCategory />} /> 
+        <Route path="/brand" element={<ManageBrands />} />  */}
       </Routes>
     </BrowserRouter>
   )

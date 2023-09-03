@@ -1,38 +1,42 @@
 /* Start Header*/
-.logo {
+#header .logo {
     color: #fff !important;
     font-weight: 900 !important;
     font-size: 30px !important;
 }
 
-.user {
+#header .user {
     text-align: end;
 }
 
-.user ul {
+#header .user ul {
     background-color: #000 !important;
 }
 
-.user-btn {
+#header .user-btn {
     border: none !important;
 }
 
-.user-btn img {
+#header .user-btn img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
+#header i {
+    color: #fff !important;
+}
+
 /* End Header*/
 
 /* Start Sidebar*/
-.custom .accordion-button::after {
+#sidebar .custom .accordion-button::after {
     height: 0;
     width: 0;
     color: #fff;
 }
 
-.accordion {
+#sidebar .accordion {
     /* sub sidebar text color*/
     --bs-accordion-btn-color: #fff;
     /*sub category Sidebar bg color*/
@@ -43,19 +47,20 @@
     --bs-accordion-active-bg: #e7f1ff;
 }
 
-.accordion-body {
+#sidebar .accordion-body {
     border-bottom: 1px #fff dashed;
 }
 
-a {
+#sidebar a {
     color: #fff !important;
 }
 
-a:hover {
-    color: #e12c2c !important;
+#sidebar a:hover {
+    color: #32f80a !important;
+    padding: 5px;
 }
 
-i {
+#sidebar i {
     color: #fff !important;
 }
 

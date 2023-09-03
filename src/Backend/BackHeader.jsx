@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const BackHeader = () => {
   return (
     <>
-    <nav class="navbar navbar-expand-md navbar-light bg-success ">
+    <nav id='header' class="navbar navbar-expand-md navbar-light bg-success ">
       <div class="container-fluid">
         <div class=""><Link class="navbar-brand logo " to="/">Soft ERP</Link></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,7 +28,7 @@ const BackHeader = () => {
           <div class="col-md-2">
             <div class="dropdown user">
               <button class="btn user-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="avatar.png" class="img-fluid" />
+                <img src="src/assets/images/avatar.png" class="img-fluid" />
               </button>
               <ul class="dropdown-menu ">
                 <li class="dropdown-item"><Link class="dropdown-link" to="/"><i class="fas fa-user-tie"></i> My Profile</Link></li>

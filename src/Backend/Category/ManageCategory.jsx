@@ -41,8 +41,8 @@ function Categories() {
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#ID</th>
-                            <th>Category Name</th>
+                            <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
+                            <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category Name</th>
                             <th>Action</th>
                         </tr>
                     </thead>

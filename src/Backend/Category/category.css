@@ -1,9 +1,10 @@
-.icons a {
+th i {
+    color: #cdd4e0;
     padding: 5px;
 }
 
-i:hover {
-    color: rgb(8, 233, 35);
+.icons a {
+    padding: 5px;
 }
 
 .icons .view i {
