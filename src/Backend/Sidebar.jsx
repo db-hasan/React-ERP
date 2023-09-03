@@ -59,32 +59,31 @@ const Sidebar = () => {
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
-            aria-expanded="false" aria-controls="flush-collapse5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
+            aria-expanded="false" aria-controls="flush-collapse4">
             <i class="fa-solid fa-chart-simple"><Link to="#"> Report</Link></i>
           </button>
-          <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"> <i class="fa-solid fa-layer-group"><Link to="/"> Stock Report</Link></i></div>
             <div class="accordion-body"> <i class="fa-solid fa-cart-shopping"><Link to="/"> Sales Report</Link></i></div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
-            aria-expanded="false" aria-controls="flush-collapse4">
-            <i class="fa-solid fa-street-view"><Link to="#"> Accounts</Link></i>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+            aria-expanded="false" aria-controls="flush-collapse5">
+            <i class="fa-solid fa-chart-column"><Link to="#"> Collection</Link></i>
           </button>
-          <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"> <i class="fa-solid fa-street-view"><Link to="/"> Bookin Status</Link></i></div>
-            <div class="accordion-body"> <i class="fa-solid fa-street-view"><Link to="#"> Online list</Link></i></div>
-            <div class="accordion-body"> <i class="fa-solid fa-eye"><Link to="#"> Booking list</Link></i></div>
+          <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <i class="fa-solid fa-plus"><Link to="#"> Add Collection</Link></i></div>
+            <div class="accordion-body"> <i class="fa-solid fa-list"><Link to="#"> Collection list</Link></i></div>
           </div>
         </div>
 
         <div class="accordion-item">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6"
             aria-expanded="false" aria-controls="flush-collapse6">
-            <i class="fa-solid fa-stethoscope"><Link to="#"> Collection</Link></i>
+            <i class="fa-solid fa-street-view"><Link to="#"> Accounts</Link></i>
           </button>
           <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body"> <i class="fa-solid fa-plus"><Link to="#"> Add Collection</Link></i></div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './category.css'
+import { Scrollbars } from 'react-custom-scrollbars-2';
 import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
@@ -13,10 +14,10 @@ function Categories() {
             <Sidebar />
         </div>
         <div class="col-sm-8 col-md-9 col-lg-10">
-            <div class="p-4">
-                <div class="text-end">
+            <div class="px-4 pt-2">
+                <div className="text-end">
                     <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add
-                    Categories</a></button>
+                    Category</a></button>
                 </div>
                 <hr />
                 <h3>Manage Categories</h3>
@@ -37,12 +38,15 @@ function Categories() {
                         <span class="input-group-text" id="basic-addon2">Search</span>
                         </div>
                     </div>
-                </div>  
+                </div> 
+                <Scrollbars  autoHeight
+                    autoHeightMin={100}
+                    autoHeightMax={300}>
                 <table class="table">
                     <thead>
                         <tr>
                             <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
-                            <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category Name</th>
+                            <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -57,7 +61,117 @@ function Categories() {
                             </td>
                         </tr>
                     </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody><tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product </td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1111</td>
+                            <td>Electronics Product</td>
+                            <td class="icons">
+                                <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
+                </Scrollbars> 
                 <div className=''>
                     <nav aria-label="...">
                         <ul class="pagination">
