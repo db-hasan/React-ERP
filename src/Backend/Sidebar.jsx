@@ -1,8 +1,12 @@
 import React from 'react'
+import { Scrollbars } from 'react-custom-scrollbars-2';
 import {Link} from 'react-router-dom'
 const Sidebar = () => {
   return (
     <>
+    <Scrollbars  autoHeight
+      autoHeightMin={100}
+      autoHeightMax={600}>
     <div id='sidebar'>
       <div  class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item custom">
@@ -111,6 +115,7 @@ const Sidebar = () => {
         </div>
       </div>
     </div>
+    </Scrollbars>
     </>
   )
 }

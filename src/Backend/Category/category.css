@@ -27,6 +27,11 @@ th:last-child {
     text-align: end;
 }
 
-.bg {
-    background-color: red;
+hr {
+    margin: 5px !important;
+    opacity: 100 !important;
+}
+
+.scroll_bar {
+    height: 500px;
 }
