@@ -19,7 +19,15 @@ const ManageBrand = () => {
                                 Brand</a></button>
                         </div>
                         <hr />
-                        <h3>Manage Brand</h3>
+                        <div className='row'>
+                            <div className='col'><h3>Manage</h3></div>
+                            <div className='col text-end icons  pb-2'>
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-success">Right</button>
+                                    <button type="button" class="btn btn-warning">Print</button>
+                                </div>
+                            </div>
+                        </div>
                         <div className='row show_search'>
                             <div className="col">
                                 <label className='m-2' htmlFor="">Show </label>
@@ -171,30 +179,22 @@ const ManageBrand = () => {
                                 </tbody>
                             </table>
                         </Scrollbars>
-                        <div className='row'>
-                            <div className='col'>
-                                <nav aria-label="...">
-                                    <ul class="pagination">
-                                        <li class="page-item disabled">
-                                            <a class="page-link">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active" aria-current="page">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div className='col text-end icons pe-5'>
-                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <button type="button" class="btn btn-success">View</button>
-                                    <button type="button" class="btn btn-warning">Print</button>
-                                </div>
-                            </div>
+                        <div className=''>
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
