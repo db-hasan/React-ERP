@@ -26,8 +26,6 @@ function App() {
         <Route path="/category" element={<ManageCategory />} />
         <Route path="/subcategory" element={<ManageSubCategory />} />
 
-
-
       </Routes>
     </BrowserRouter>
   )
