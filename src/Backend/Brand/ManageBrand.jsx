@@ -1,5 +1,6 @@
 import React from 'react'
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import { Link } from 'react-router-dom'
 import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
@@ -15,7 +16,24 @@ const ManageBrand = () => {
                 <div class="col-sm-8 col-md-9 col-lg-10">
                     <div class="px-4 pt-2">
                         <div className="text-end">
-                            <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add New</a></button>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><Link to="" class="text-light"> Add New </Link></button>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <hr />
                         <div className='row'>
