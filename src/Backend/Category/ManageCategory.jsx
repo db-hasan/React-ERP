@@ -16,8 +16,7 @@ function Categories() {
                 <div class="col-sm-8 col-md-9 col-lg-10">
                     <div class="px-4 pt-2">
                         <div className="text-end">
-                            <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add
-                                Category</a></button>
+                            <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add New</a></button>
                         </div>
                         <hr />
                         <div className='row'>

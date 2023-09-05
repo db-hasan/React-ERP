@@ -23,7 +23,7 @@ const Sidebar = () => {
               <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body"> <i class="fa-solid fa-tag"><Link to="/brand"> Brands</Link></i></div>
                 <div class="accordion-body"> <i class="fa-solid fa-layer-group"><Link to="/category"> Category</Link></i></div>
-                <div class="accordion-body"> <i class="fa-solid fa-box"><Link to="/subcategory"> Sub Category</Link></i></div>
+                <div class="accordion-body"> <i class="fa-solid fa-box"><Link to="/subcategory"> SubCategory</Link></i></div>
               </div>
             </div>
 

@@ -4,7 +4,7 @@ import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
 
-const ManageBrand = () => {
+const ManageSubCategory = () => {
     return (
         <>
             <BackHeader />
@@ -15,7 +15,7 @@ const ManageBrand = () => {
                 <div class="col-sm-8 col-md-9 col-lg-10">
                     <div class="px-4 pt-2">
                         <div className="text-end">
-                            <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add New</a></button>
+                            <button class="btn btn-primary"><a class="text-light"> Add New</a></button>
                         </div>
                         <hr />
                         <div className='row'>
@@ -52,13 +52,15 @@ const ManageBrand = () => {
                                 <thead>
                                     <tr>
                                         <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
-                                        <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Brand</th>
+                                        <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category</th>
+                                        <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> SubCategory</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1111</td>
+                                        <td>Electronics Product</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -70,6 +72,7 @@ const ManageBrand = () => {
                                 <tbody>
                                     <tr>
                                         <td>1111</td>
+                                        <td>Electronics Product</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -81,16 +84,6 @@ const ManageBrand = () => {
                                     <tr>
                                         <td>1111</td>
                                         <td>Electronics Product </td>
-                                        <td class="icons">
-                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
-                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
-                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -103,16 +96,6 @@ const ManageBrand = () => {
                                     <tr>
                                         <td>1111</td>
                                         <td>Electronics Product</td>
-                                        <td class="icons">
-                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
-                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
-                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -125,16 +108,6 @@ const ManageBrand = () => {
                                     <tr>
                                         <td>1111</td>
                                         <td>Electronics Product</td>
-                                        <td class="icons">
-                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
-                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
-                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -147,16 +120,6 @@ const ManageBrand = () => {
                                     <tr>
                                         <td>1111</td>
                                         <td>Electronics Product</td>
-                                        <td class="icons">
-                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
-                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
-                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -168,6 +131,55 @@ const ManageBrand = () => {
                                 <tbody>
                                     <tr>
                                         <td>1111</td>
+                                        <td>Electronics Product</td>
+                                        <td>Electronics Product</td>
+                                        <td class="icons">
+                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>1111</td>
+                                        <td>Electronics Product</td>
+                                        <td>Electronics Product</td>
+                                        <td class="icons">
+                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>1111</td>
+                                        <td>Electronics Product</td>
+                                        <td>Electronics Product</td>
+                                        <td class="icons">
+                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>1111</td>
+                                        <td>Electronics Product</td>
+                                        <td>Electronics Product</td>
+                                        <td class="icons">
+                                            <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="" class="edit" data-toggle="modal"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="" class="delete" data-toggle="modal"><i class="fa-solid fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>1111</td>
+                                        <td>Electronics Product</td>
                                         <td>Electronics Product</td>
                                         <td class="icons">
                                             <a href="" class="view" data-toggle="modal"><i class="fa-solid fa-eye"></i></a>
@@ -203,4 +215,4 @@ const ManageBrand = () => {
     )
 }
 
-export default ManageBrand
+export default ManageSubCategory
