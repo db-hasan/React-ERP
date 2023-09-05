@@ -1,11 +1,10 @@
 import React from 'react'
-import './category.css'
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
 
-function Categories() {
+const ManageBrand = () => {
     return (
         <>
             <BackHeader />
@@ -17,10 +16,10 @@ function Categories() {
                     <div class="px-4 pt-2">
                         <div className="text-end">
                             <button class="btn btn-primary"><a routerLink="/" class="text-light"> Add
-                                Category</a></button>
+                                Brand</a></button>
                         </div>
                         <hr />
-                        <h3>Manage Categories</h3>
+                        <h3>Manage Brand</h3>
                         <div className='row show_search'>
                             <div className="col">
                                 <label className='m-2' htmlFor="">Show </label>
@@ -46,7 +45,7 @@ function Categories() {
                                 <thead>
                                     <tr>
                                         <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
-                                        <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category</th>
+                                        <th><a href=""><i class="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Brand</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -205,4 +204,4 @@ function Categories() {
     )
 }
 
-export default Categories
+export default ManageBrand

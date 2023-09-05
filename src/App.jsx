@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route  } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import FrontHome from './Frontend/FrontHome'
 import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
 import Dashboard from './Backend/Dashboard'
 import ManageCategory from './Backend/Category/ManageCategory'
-// import ManageSubCategory from './Backend/SubCategory/ManageSubCategory'
-// import ManageBrands from './Backend/Brands/ManageBrands'
+import ManageBrand from './Backend/Brand/ManageBrand'
 
 
 function App() {
@@ -21,9 +20,9 @@ function App() {
         </Route>
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Dashboard />} />
-        <Route path="/category" element={<ManageCategory />} /> 
-        {/* <Route path="/subcategory" element={<ManageSubCategory />} /> 
-        <Route path="/brand" element={<ManageBrands />} />  */}
+        <Route path="/category" element={<ManageCategory />} />
+        <Route path="/brand" element={<ManageBrand />} />
+
       </Routes>
     </BrowserRouter>
   )
