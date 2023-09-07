@@ -19,7 +19,7 @@ function Categories() {
                         <div className="text-end">
                             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><Link to="" class="text-light"> Add New </Link></button>
                         </div>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -48,14 +48,14 @@ function Categories() {
                         </div>
                         <div className='row show_search'>
                             <div className="col">
-                                <label className='m-2' htmlFor="">Show </label>
+                                <span className='m-2' htmlFor="">Show </span>
                                 <select className='px-3' name="" id="">
                                     <option value="">10</option>
                                     <option value="">25</option>
                                     <option value="">50</option>
                                     <option value="">100</option>
                                 </select>
-                                <label className='m-2' htmlFor=""> Entries</label>
+                                <span className='m-2' htmlFor=""> Entries</span>
                             </div>
                             <div className="col">
                                 <div class="input-group ">
