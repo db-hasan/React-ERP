@@ -6,7 +6,7 @@ import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
 
-function Categories() {
+const Categories = () => {
     return (
         <>
             <BackHeader />
