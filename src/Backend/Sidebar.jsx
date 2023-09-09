@@ -101,15 +101,15 @@ const Sidebar = () => {
                 <i className="fa-solid fa-users"><Link to="#"> Users</Link></i>
               </button>
               <div id="flush-collapse8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-users"><Link to="#"> Add Roll</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-eye"><Link to="#"> View Users</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-users"><Link to="#"> Add User</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-address-card"><Link to="#"> Contact</Link></i></div>
               </div>
             </div>
 
             <div className="accordion accordion-flush" id="accordionFlushExample">
               <div className="accordion-item custom">
                 <button className="accordion-button collapsed" type="button">
-                  <i className="fa-solid fa-address-card"> <Link to="#accordionFlushExample"> Contact</Link></i>
+                  <i className="fa-solid fa-right-to-bracket"> <Link to="#accordionFlushExample"> Logout</Link></i>
                 </button>
               </div>
             </div>

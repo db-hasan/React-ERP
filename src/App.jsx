@@ -9,6 +9,7 @@ import Dashboard from './Backend/Dashboard'
 import Brand from './Backend/Pages/Brand'
 import Category from './Backend/Pages/Category'
 import SubCategory from './Backend/Pages/SubCategory'
+import Login from './Backend/Pages/Login'
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="data" element={<Dome />} />
         </Route>
         <Route path="*" element={<Error />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/brand" element={<Brand />} />
         <Route path="/category" element={<Category />} />
