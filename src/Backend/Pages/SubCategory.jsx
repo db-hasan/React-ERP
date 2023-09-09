@@ -26,8 +26,8 @@ const ManageSubCategory = () => {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        <form action="">
-                                            <div class="mb-3">
+                                        <form className='row g-3' action="">
+                                            <div class="">
                                                 <label for="Select" class="form-label">Category Name</label>
                                                 <select id="Select" class="form-select">
                                                     <option value="">Laptop</option>
@@ -35,7 +35,7 @@ const ManageSubCategory = () => {
                                                     <option value="">Monitor</option>
                                                 </select>
                                             </div>
-                                            <div class="mb-3">
+                                            <div class="">
                                                 <label for="exampleInputEmail1" class="form-label">SubCategory</label>
                                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                             </div>

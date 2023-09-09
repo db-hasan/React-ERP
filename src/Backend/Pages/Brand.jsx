@@ -27,9 +27,9 @@ const ManageBrand = () => {
                                     </div>
                                     <div className="modal-body">
                                         <form action="">
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Brand Name</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                            <div className="mb-3">
+                                                <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                             </div>
                                         </form>
                                     </div>

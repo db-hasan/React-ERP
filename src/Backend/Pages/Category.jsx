@@ -26,8 +26,8 @@ const Categories = () => {
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        <form action="">
-                                            <div class="mb-3">
+                                        <form className='row g-3' action="">
+                                            <div class="">
                                                 <label for="exampleInputEmail1" class="form-label">Category Name</label>
                                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                             </div>

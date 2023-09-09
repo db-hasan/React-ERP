@@ -34,7 +34,7 @@ const Sidebar = () => {
               </button>
               <div id="flush-collapse9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body"> <i className="fa-solid fa-plus"><Link to="/product"> Add Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="#"> Add Supplier</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="/supplier"> Add Supplier</Link></i></div>
               </div>
             </div>
 
