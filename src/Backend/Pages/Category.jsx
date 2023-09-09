@@ -16,17 +16,22 @@ const Categories = () => {
                 <div className="col-sm-8 col-md-9 col-lg-10">
                     <div className="px-4 pt-2">
                         <div className="text-end">
-                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><Link to="" className="text-light"> Add New </Link></button>
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><Link to="" className="text-light"><i className="fa-solid fa-plus" /> Add New </Link></button>
                         </div>
-                        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal fade mt-5" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add Category</h1>
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        ...
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Category Name</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                            </div>
+                                        </form>
                                     </div>
                                     <div className="modal-footer">
                                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -40,7 +45,7 @@ const Categories = () => {
                             <div className='col'><h3>Manage</h3></div>
                             <div className='col text-end icons  pb-2'>
                                 <div className="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <button type="button" className="btn btn-success">Right</button>
+                                    <button type="button" className="btn btn-success">View</button>
                                     <button type="button" className="btn btn-warning">Print</button>
                                 </div>
                             </div>
@@ -71,6 +76,7 @@ const Categories = () => {
                                     <tr>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category</th>
+                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -78,115 +84,7 @@ const Categories = () => {
                                     <tr>
                                         <td>1111</td>
                                         <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody><tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product </td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
-                                        <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
+                                        <td>Active</td>
                                         <td className="icons">
                                             <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
                                             <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
