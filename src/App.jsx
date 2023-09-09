@@ -6,9 +6,9 @@ import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
 import Dashboard from './Backend/Dashboard'
-import ManageBrand from './Backend/Pages/ManageBrand'
-import ManageCategory from './Backend/Pages/ManageCategory'
-import ManageSubCategory from './Backend/Pages/ManageSubCategory'
+import Brand from './Backend/Pages/Brand'
+import Category from './Backend/Pages/Category'
+import SubCategory from './Backend/Pages/SubCategory'
 
 
 
@@ -22,9 +22,9 @@ function App() {
         </Route>
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Dashboard />} />
-        <Route path="/brand" element={<ManageBrand />} />
-        <Route path="/category" element={<ManageCategory />} />
-        <Route path="/subcategory" element={<ManageSubCategory />} />
+        <Route path="/brand" element={<Brand />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/subcategory" element={<SubCategory />} />
 
       </Routes>
     </BrowserRouter>
