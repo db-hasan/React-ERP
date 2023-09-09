@@ -6,9 +6,9 @@ import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
 import Dashboard from './Backend/Dashboard'
-import ManageBrand from './Backend/Brand/ManageBrand'
-import ManageCategory from './Backend/Category/ManageCategory'
-import ManageSubCategory from './Backend/SubCategory/ManageSubCategory'
+import ManageBrand from './Backend/Pages/ManageBrand'
+import ManageCategory from './Backend/Pages/ManageCategory'
+import ManageSubCategory from './Backend/Pages/ManageSubCategory'
 
 
 
