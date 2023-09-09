@@ -12,9 +12,9 @@ const Stock = () => {
                 <div className="col-sm-4 col-md-3 col-lg-2">
                     <Sidebar />
                 </div>
-                <div className="col-sm-8 col-md-9 col-lg-10">
-                    <div className='pt-3 px-5'>
-                        <h4 >Purchaes Stock</h4>
+                <div className="col-sm-8 col-md-9 col-lg-10 ">
+                    <div className='pt-3 px-3'>
+                        <h4 className='text-end'>Purchaes Stock</h4>
                     </div>                  
                     <Scrollbars autoHeight
                             autoHeightMin={100}
@@ -104,13 +104,13 @@ const Stock = () => {
                                     </select>
                                 </div>
                                 <div className="col-2">
-                                    <input type="text" className="form-control" id="inputPassword4" placeholder="QTY"/>
+                                    <input type="text" className="form-control" id="" placeholder="QTY"/>
                                 </div>
                                 <div className="col-2">
-                                    <input type="text" className="form-control" id="inputAddress" placeholder="Unit Price"/>
+                                    <input type="text" className="form-control" id="" placeholder="Unit Price"/>
                                 </div>
                                 <div className="col-2">
-                                    <input type="text" className="form-control" id="inputAddress2" placeholder="Total"/>
+                                    <input type="text" className="form-control" id="" placeholder="Total"/>
                                 </div>
 
                                 <div className="col-6">
