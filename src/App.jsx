@@ -12,6 +12,7 @@ import Category from './Backend/Pages/Category'
 import SubCategory from './Backend/Pages/SubCategory'
 import Product from './Backend/Pages/Product'
 import Supplier from './Backend/Pages/supplier'
+import Stock from './Backend/Pages/Stock'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/subcategory" element={<SubCategory />} />
         <Route path="/product" element={<Product />} />
         <Route path="/supplier" element={<Supplier />} />
+        <Route path="/stock" element={<Stock />} />
 
       </Routes>
     </BrowserRouter>
