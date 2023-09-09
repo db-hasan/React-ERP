@@ -187,8 +187,8 @@ const Stock = () => {
                                 </div>
 
                                 
-                                <div className="col-12">
-                                    <button type="submit" className="btn btn-primary">Sign in</button>
+                                <div className="col-12 text-end">
+                                    <button type="submit" className="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </div>
