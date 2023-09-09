@@ -6,15 +6,15 @@ const Login = () => {
         <>
             <div className='p-5 '>
                 <form action="" method="post">
-                    <div class="mb-3 col-md-6">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <div className="mb-3 col-md-6">
+                        <label for="exampleInputEmail1" className="form-label">Email address</label>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                     </div>
-                    <div class="mb-3 col-md-6">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                    <div className="mb-3 col-md-6">
+                        <label for="exampleInputPassword1" className="form-label">Password</label>
+                        <input type="password" className="form-control" id="exampleInputPassword1" />
                     </div>
-                    <Link to="/dashboard"><button type="submit" class="btn btn-primary">Submit</button></Link>
+                    <Link to="/dashboard"><button type="submit" className="btn btn-primary">Submit</button></Link>
                 </form>
             </div >
         </>

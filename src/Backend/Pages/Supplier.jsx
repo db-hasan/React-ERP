@@ -64,14 +64,14 @@ const Supplier = () => {
                         </div>
                         <div className='row show_search'>
                             <div className="col">
-                                <span className='m-2' htmlFor="">Show </span>
+                                <span className='m-2' >Show </span>
                                 <select className='px-3' name="" id="">
                                     <option value="">10</option>
                                     <option value="">25</option>
                                     <option value="">50</option>
                                     <option value="">100</option>
                                 </select>
-                                <span className='m-2' htmlFor=""> Entries</span>
+                                <span className='m-2' > Entries</span>
                             </div>
                             <div className="col">
                                 <div className="input-group ">
