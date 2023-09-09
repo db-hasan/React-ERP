@@ -33,8 +33,8 @@ const Sidebar = () => {
                 <i className="fa-solid fa-layer-group"><Link to="#"> Product</Link></i>
               </button>
               <div id="flush-collapse9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-plus"><Link to="#"> Add Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-list"><Link to="#"> Product list</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-plus"><Link to="/product"> Add Product</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="#"> Add Supplier</Link></i></div>
               </div>
             </div>
 
@@ -70,6 +70,7 @@ const Sidebar = () => {
               <div id="flush-collapse4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body"> <i className="fa-solid fa-layer-group"><Link to="/"> Stock Report</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-cart-shopping"><Link to="/"> Sales Report</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="#"> Supplier</Link></i></div>
               </div>
             </div>
 

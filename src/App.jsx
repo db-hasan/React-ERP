@@ -5,11 +5,13 @@ import FrontHome from './Frontend/FrontHome'
 import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
+import Login from './Backend/Pages/Login'
 import Dashboard from './Backend/Dashboard'
 import Brand from './Backend/Pages/Brand'
 import Category from './Backend/Pages/Category'
 import SubCategory from './Backend/Pages/SubCategory'
-import Login from './Backend/Pages/Login'
+import Product from './Backend/Pages/Product'
+
 
 
 
@@ -27,6 +29,7 @@ function App() {
         <Route path="/brand" element={<Brand />} />
         <Route path="/category" element={<Category />} />
         <Route path="/subcategory" element={<SubCategory />} />
+        <Route path="/product" element={<Product />} />
 
       </Routes>
     </BrowserRouter>
