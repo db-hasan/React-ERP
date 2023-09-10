@@ -15,7 +15,7 @@ const PurchaesStockInvioce = () => {
                 </div>
                 <div className="col-sm-8 col-md-9 col-lg-10 pt-3 px-3">
                     <div className='row'>
-                        <div className='col'><h3>Purchaes Stock</h3></div>
+                        <div className='col'><h3>Purchaes Invioce</h3></div>
                         <div className='col text-end icons'>
                             <div className="btn-group" role="group" aria-label="Basic mixed styles example">
                                <button className="btn btn-primary"><Link to="/PurchaesStock" className="text-light"><i className="fa-solid fa-plus" /> Add New </Link></button>
