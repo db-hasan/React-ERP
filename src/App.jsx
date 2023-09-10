@@ -13,6 +13,11 @@ import SubCategory from './Backend/Pages/SubCategory'
 import AddProduct from './Backend/Pages/AddProduct'
 import AddSupplier from './Backend/Pages/AddSupplier'
 import PurchaesStock from './Backend/Pages/PurchaesStock'
+import RetrunProduct from './Backend/Pages/RetrunProduct'
+import DamageProduct from './Backend/Pages/DamageProduct'
+import StockInvioce from './Backend/Pages/StockInvioce'
+import RetrunInvioce from './Backend/Pages/RetrunInvioce'
+import DamageInvioce from './Backend/Pages/DamageInvioce'
 
 
 function App() {
@@ -32,6 +37,11 @@ function App() {
         <Route path="/AddProduct" element={<AddProduct />} />
         <Route path="/AddSupplier" element={<AddSupplier />} />
         <Route path="/PurchaesStock" element={<PurchaesStock />} />
+        <Route path="/RetrunProduct" element={<RetrunProduct />} />
+        <Route path="/DamageProduct" element={<DamageProduct />} />
+        <Route path="/StockInvioce" element={<StockInvioce />} />
+        <Route path="/RetrunInvioce" element={<RetrunInvioce />} />
+        <Route path="/DamageInvioce" element={<DamageInvioce />} />
 
       </Routes>
     </BrowserRouter>
