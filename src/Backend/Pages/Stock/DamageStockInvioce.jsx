@@ -13,7 +13,7 @@ const DamageStockInvioce = () => {
                 <div className="col-sm-4 col-md-3 col-lg-2">
                     <Sidebar />
                 </div>
-                <div className="col-sm-8 col-md-9 col-lg-10 pt-3 px-3">
+                <div className="col-sm-8 col-md-9 col-lg-10 pt-2 px-3">
                     <div className='row'>
                         <div className='col'><h3>Damage Invioce</h3></div>
                         <div className='col text-end icons'>
