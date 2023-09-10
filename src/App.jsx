@@ -18,7 +18,10 @@ import DamageStock from './Backend/Pages/Stock/DamageStock'
 import PurchaesStockInvioce from './Backend/Pages/Stock/PurchaesStockInvioce'
 import RetrunStockInvioce from './Backend/Pages/Stock/RetrunStockInvioce'
 import DamageStockInvioce from './Backend/Pages/Stock/DamageStockInvioce'
-
+import SalesProduct from './Backend/Pages/Sales/SalesProduct'
+import RetrunProduct from './Backend/Pages/Sales/RetrunProduct'
+import SalesInvioce from './Backend/Pages/Sales/SalesInvioce'
+import RetrunSalesInvioce from './Backend/Pages/Sales/RetrunSalesInvioce'
 
 function App() {
   return (
@@ -42,7 +45,10 @@ function App() {
         <Route path="/PurchaesStockInvioce" element={<PurchaesStockInvioce />} />
         <Route path="/RetrunStockInvioce" element={<RetrunStockInvioce />} />
         <Route path="/DamageStockInvioce" element={<DamageStockInvioce />} />
-
+        <Route path="/SalesProduct" element={<SalesProduct />} />
+        <Route path="/RetrunProduct" element={<RetrunProduct />} />
+        <Route path="/SalesInvioce" element={<SalesInvioce />} />
+        <Route path="/RetrunSalesInvioce" element={<RetrunSalesInvioce />} />
       </Routes>
     </BrowserRouter>
   )

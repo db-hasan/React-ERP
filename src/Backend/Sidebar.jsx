@@ -59,10 +59,10 @@ const Sidebar = () => {
                 <i className="fa-solid fa-cart-shopping"><Link to="#"> Sales</Link></i>
               </button>
               <div id="flush-collapse3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-cart-shopping"><Link to="/"> Sales Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/"> Retrun Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/"> Sales Invioce</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/"> Retrun Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-cart-shopping"><Link to="/SalesProduct"> Sales Product</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/RetrunProduct"> Retrun Product</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/SalesInvioce"> Sales Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/RetrunSalesInvioce"> Retrun Invioce</Link></i></div>
               </div>
             </div>
 
