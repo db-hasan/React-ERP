@@ -198,6 +198,20 @@ const DamageStock = () => {
                                         <input type="text" className="form-control" id="inputAddress2" placeholder="Total" />
                                     </div>
 
+                                    <hr />
+                                    <div className="col-6">
+                                        <label for="inputEmail4" className="form-label"><strong></strong></label>
+                                    </div>
+                                    <div className="col-2">
+                                        <label for="inputPassword4" className="form-label"><strong>QTY: 20</strong></label>
+                                    </div>
+                                    <div className="col-2">
+                                        <label for="inputAddress" className="form-label"><strong>Price</strong></label>
+                                    </div>
+                                    <div className="col-2">
+                                        <label for="inputAddress2" className="form-label"><strong>Total: 500</strong></label>
+                                    </div>
+
 
                                     <div className="col-12 text-end">
                                         <button type="submit" className="btn btn-primary">Submit</button>
