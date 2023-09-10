@@ -27,7 +27,12 @@ const PurchaesStock = () => {
                                     <span><strong>Client info</strong></span>
                                     <div className="col-lg-12">
                                         <select id="inputState" className="form-select">
-                                            <option value="">Suppliers Name</option>
+                                            <option value=""> From (Suppliers)</option>
+                                        </select>
+                                    </div>
+                                    <div className="col-lg-12">
+                                        <select id="inputState" className="form-select">
+                                            <option value=""> To (Main Stock)</option>
                                         </select>
                                     </div>
                                     <div className="col-lg-12">
