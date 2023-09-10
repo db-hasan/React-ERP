@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import BackHeader from '../../BackHeader'
 import BackFooter from '../../BackFooter'
@@ -12,10 +13,16 @@ const DamageStock = () => {
                 <div className="col-sm-4 col-md-3 col-lg-2">
                     <Sidebar />
                 </div>
-                <div className="col-sm-8 col-md-9 col-lg-10 ">
-                    <div className='pt-3 px-3'>
-                        <h4 className='text-end'>Damage Product</h4>
+                <div className="col-sm-8 col-md-9 col-lg-10 pt-3 px-3">
+                    <div className='row'>
+                        <div className='col'><h3>Damage Stock</h3></div>
+                        <div className='col text-end icons'>
+                            <div className="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button className="btn btn-primary" ><Link to="/DamageStockInvioce" className="text-light"><i className="fa-solid fa-file-invoice" /> Invioce </Link></button>
+                            </div>    
+                        </div>                           
                     </div>
+                    <hr />
                     <Scrollbars autoHeight
                         autoHeightMin={100}
                         autoHeightMax={470}>

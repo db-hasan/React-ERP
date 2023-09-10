@@ -13,12 +13,16 @@ const DamageStockInvioce = () => {
                 <div className="col-sm-4 col-md-3 col-lg-2">
                     <Sidebar />
                 </div>
-                <div className="col-sm-8 col-md-9 col-lg-10">
-                    <div className="px-4 pt-2">
-                        <div className="text-end">
-                            <button className="btn btn-primary"><Link to="/DamageStockInvioce" className="text-light"><i className="fa-solid fa-plus" /> Add New </Link></button>
-                        </div>
-                        <hr />
+                <div className="col-sm-8 col-md-9 col-lg-10 pt-3 px-3">
+                    <div className='row'>
+                        <div className='col'><h3>Damage Stock</h3></div>
+                        <div className='col text-end icons'>
+                            <div className="btn-group" role="group" aria-label="Basic mixed styles example">
+                               <button className="btn btn-primary"><Link to="/DamageStock" className="text-light"><i className="fa-solid fa-plus" /> Add New </Link></button>
+                            </div>    
+                        </div>                           
+                    </div>
+                    <hr />
                         <div className='row'>
                             <div className='col'><h3>Manage</h3></div>
                             <div className='col text-end icons  pb-2'>
@@ -91,7 +95,6 @@ const DamageStockInvioce = () => {
                                 </ul>
                             </nav>
                         </div>
-                    </div>
                 </div>
             </div>
             <BackFooter />
