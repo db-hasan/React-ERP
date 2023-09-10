@@ -81,6 +81,10 @@ th i {
     padding: 5px;
 }
 
+.icons .print {
+    color: #e6190b !important;
+}
+
 .icons .view i {
     color: #000 !important;
 }
