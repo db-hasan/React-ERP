@@ -45,11 +45,11 @@ const Sidebar = () => {
               </button>
               <div id="flush-collapse2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body"> <i className="fa-solid fa-baby-carriage"><Link to="/PurchaesStock"> Purchaes Stock</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/RetrunProduct"> Retrun Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-trash-can"><Link to="/DamageProduct"> Damage Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/PurchaesInvioce"> Stock Invioce</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-retweet"><Link to="/RetrunInvioce"> Retrun Invioce</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/DamageInvioce"> Damage Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/RetrunStock"> Retrun Stock</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-trash-can"><Link to="/DamageStock"> Damage Stock</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/PurchaesStockInvioce"> Stock Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-retweet"><Link to="/RetrunStockInvioce"> Retrun Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/DamageStockInvioce"> Damage Invioce</Link></i></div>
               </div>
             </div>
 

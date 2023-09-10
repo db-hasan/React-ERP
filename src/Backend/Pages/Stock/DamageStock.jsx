@@ -4,7 +4,7 @@ import BackHeader from '../../BackHeader'
 import BackFooter from '../../BackFooter'
 import Sidebar from '../../Sidebar'
 
-const DamageProduct = () => {
+const DamageStock = () => {
     return (
         <>
             <BackHeader />
@@ -202,4 +202,4 @@ const DamageProduct = () => {
     )
 }
 
-export default DamageProduct
+export default DamageStock

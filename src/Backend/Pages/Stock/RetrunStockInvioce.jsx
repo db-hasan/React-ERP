@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RetrunInvioce = () => {
+const RetrunStockInvioce = () => {
     return (
         <div>RetrunInvioce</div>
     )
 }
 
-export default RetrunInvioce
+export default RetrunStockInvioce

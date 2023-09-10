@@ -13,11 +13,11 @@ import SubCategory from './Backend/Pages/Category/SubCategory'
 import AddProduct from './Backend/Pages/Product/AddProduct'
 import AddSupplier from './Backend/Pages/Product/AddSupplier'
 import PurchaesStock from './Backend/Pages/Stock/PurchaesStock'
-import RetrunProduct from './Backend/Pages/Stock/RetrunProduct'
-import DamageProduct from './Backend/Pages/Stock/DamageProduct'
-import PurchaesInvioce from './Backend/Pages/Stock/PurchaesInvioce'
-import RetrunInvioce from './Backend/Pages/Stock/RetrunInvioce'
-import DamageInvioce from './Backend/Pages/Stock/DamageInvioce'
+import RetrunStock from './Backend/Pages/Stock/RetrunStock'
+import DamageStock from './Backend/Pages/Stock/DamageStock'
+import PurchaesStockInvioce from './Backend/Pages/Stock/PurchaesStockInvioce'
+import RetrunStockInvioce from './Backend/Pages/Stock/RetrunStockInvioce'
+import DamageStockInvioce from './Backend/Pages/Stock/DamageStockInvioce'
 
 
 function App() {
@@ -37,11 +37,11 @@ function App() {
         <Route path="/AddProduct" element={<AddProduct />} />
         <Route path="/AddSupplier" element={<AddSupplier />} />
         <Route path="/PurchaesStock" element={<PurchaesStock />} />
-        <Route path="/RetrunProduct" element={<RetrunProduct />} />
-        <Route path="/DamageProduct" element={<DamageProduct />} />
-        <Route path="/PurchaesInvioce" element={<PurchaesInvioce />} />
-        <Route path="/RetrunInvioce" element={<RetrunInvioce />} />
-        <Route path="/DamageInvioce" element={<DamageInvioce />} />
+        <Route path="/RetrunStock" element={<RetrunStock />} />
+        <Route path="/DamageStock" element={<DamageStock />} />
+        <Route path="/PurchaesStockInvioce" element={<PurchaesStockInvioce />} />
+        <Route path="/RetrunStockInvioce" element={<RetrunStockInvioce />} />
+        <Route path="/DamageStockInvioce" element={<DamageStockInvioce />} />
 
       </Routes>
     </BrowserRouter>

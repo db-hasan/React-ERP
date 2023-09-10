@@ -4,7 +4,7 @@ import BackHeader from '../../BackHeader'
 import BackFooter from '../../BackFooter'
 import Sidebar from '../../Sidebar'
 
-const RetrunProduct = () => {
+const RetrunStock = () => {
     return (
         <>
             <BackHeader />
@@ -202,4 +202,4 @@ const RetrunProduct = () => {
     )
 }
 
-export default RetrunProduct
+export default RetrunStock
