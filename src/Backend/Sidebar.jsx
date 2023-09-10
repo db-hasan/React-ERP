@@ -72,8 +72,8 @@ const Sidebar = () => {
                 <i className="fa-solid fa-chart-simple"><Link to="#"> Report</Link></i>
               </button>
               <div id="flush-collapse4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-layer-group"><Link to="/"> Stock Report</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-cart-shopping"><Link to="/"> Sales Report</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-cart-shopping"><Link to="/SalesReport"> Sales Report</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-layer-group"><Link to="/StockReport"> Stock Report</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="#"> Supplier</Link></i></div>
               </div>
             </div>

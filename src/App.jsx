@@ -22,6 +22,8 @@ import SalesProduct from './Backend/Pages/Sales/SalesProduct'
 import RetrunProduct from './Backend/Pages/Sales/RetrunProduct'
 import SalesInvioce from './Backend/Pages/Sales/SalesInvioce'
 import RetrunSalesInvioce from './Backend/Pages/Sales/RetrunSalesInvioce'
+import SalesReport from './Backend/Pages/Report/SalesReport'
+import StockReport from './Backend/Pages/Report/StockReport'
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
         <Route path="/RetrunProduct" element={<RetrunProduct />} />
         <Route path="/SalesInvioce" element={<SalesInvioce />} />
         <Route path="/RetrunSalesInvioce" element={<RetrunSalesInvioce />} />
+        <Route path="/SalesReport" element={<SalesReport />} />
+        <Route path="/StockReport" element={<StockReport />} />
       </Routes>
     </BrowserRouter>
   )
