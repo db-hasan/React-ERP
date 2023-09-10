@@ -1,10 +1,10 @@
 import React from 'react'
 import { Scrollbars } from 'react-custom-scrollbars-2';
-import BackHeader from '../BackHeader'
-import BackFooter from '../BackFooter'
-import Sidebar from '../Sidebar'
+import BackHeader from '../../BackHeader'
+import BackFooter from '../../BackFooter'
+import Sidebar from '../../Sidebar'
 
-const DamageProduct = () => {
+const RetrunProduct = () => {
     return (
         <>
             <BackHeader />
@@ -14,7 +14,7 @@ const DamageProduct = () => {
                 </div>
                 <div className="col-sm-8 col-md-9 col-lg-10 ">
                     <div className='pt-3 px-3'>
-                        <h4 className='text-end'>Damage Product</h4>
+                        <h4 className='text-end'>Retrun Product</h4>
                     </div>
                     <Scrollbars autoHeight
                         autoHeightMin={100}
@@ -202,4 +202,4 @@ const DamageProduct = () => {
     )
 }
 
-export default DamageProduct
+export default RetrunProduct

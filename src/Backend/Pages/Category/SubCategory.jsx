@@ -1,11 +1,11 @@
 import React from 'react'
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { Link } from 'react-router-dom'
-import BackHeader from '../BackHeader'
-import BackFooter from '../BackFooter'
-import Sidebar from '../Sidebar'
+import BackHeader from '../../BackHeader'
+import BackFooter from '../../BackFooter'
+import Sidebar from '../../Sidebar'
 
-const AddProduct = () => {
+const ManageSubCategory = () => {
     return (
         <>
             <BackHeader />
@@ -18,16 +18,16 @@ const AddProduct = () => {
                         <div className="text-end">
                             <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><Link to="" className="text-light"><i className="fa-solid fa-plus" /> Add New</Link></button>
                         </div>
-                        <div className="modal fade mt-3" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal fade mt-5" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add Product</h1>
+                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add SubCategory</h1>
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
                                         <form className='row g-3' action="">
-                                            <div className="col-md-6">
+                                            <div className="">
                                                 <label for="Select" className="form-label">Category Name</label>
                                                 <select id="Select" className="form-select">
                                                     <option value="">Laptop</option>
@@ -35,48 +35,8 @@ const AddProduct = () => {
                                                     <option value="">Monitor</option>
                                                 </select>
                                             </div>
-                                            <div className="col-md-6">
-                                                <label for="Select" className="form-label">SubCategory</label>
-                                                <select id="Select" className="form-select">
-                                                    <option value="">Laptop</option>
-                                                    <option value="">Phone</option>
-                                                    <option value="">Monitor</option>
-                                                </select>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <label for="Select" className="form-label">Brand Name</label>
-                                                <select id="Select" className="form-select">
-                                                    <option value="">Laptop</option>
-                                                    <option value="">Phone</option>
-                                                    <option value="">Monitor</option>
-                                                </select>
-                                            </div>
-                                            <div className="col-md-4">
-                                                <label for="Select" className="form-label">Unit</label>
-                                                <select id="Select" className="form-select">
-                                                    <option value="">Laptop</option>
-                                                    <option value="">Phone</option>
-                                                    <option value="">Monitor</option>
-                                                </select>
-                                            </div>
-                                            <div className="mb-3">
-                                                <label for="Select" className="form-label">Supplier Name</label>
-                                                <select id="Select" className="form-select">
-                                                    <option value="">Laptop</option>
-                                                    <option value="">Phone</option>
-                                                    <option value="">Monitor</option>
-                                                </select>
-                                            </div>
-                                            <div className="mb-3">
-                                                <label for="exampleInputEmail1" className="form-label">Product Name</label>
-                                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                            </div>
-                                            <div className="col-md-6">
-                                                <label for="exampleInputEmail1" className="form-label">Purchaes Price</label>
-                                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                            </div>
-                                            <div className="col-md-6">
-                                                <label for="exampleInputEmail1" className="form-label">Selling Price</label>
+                                            <div className="">
+                                                <label for="exampleInputEmail1" className="form-label">SubCategory</label>
                                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                             </div>
                                         </form>
@@ -100,14 +60,14 @@ const AddProduct = () => {
                         </div>
                         <div className='row show_search'>
                             <div className="col">
-                                <span className='m-2'>Show </span>
+                                <span className='m-2' >Show </span>
                                 <select className='px-3' name="" id="">
                                     <option value="">10</option>
                                     <option value="">25</option>
                                     <option value="">50</option>
                                     <option value="">100</option>
                                 </select>
-                                <span className='m-2'> Entries</span>
+                                <span className='m-2' > Entries</span>
                             </div>
                             <div className="col">
                                 <div className="input-group ">
@@ -125,10 +85,6 @@ const AddProduct = () => {
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category</th>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> SubCategory</th>
-                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Brand</th>
-                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Unit</th>
-                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Purchaes</th>
-                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Selling</th>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -137,11 +93,7 @@ const AddProduct = () => {
                                     <tr>
                                         <td>1111</td>
                                         <td>Electronics Product</td>
-                                        <td>Phone</td>
-                                        <td>Apple</td>
-                                        <td>5</td>
-                                        <td>450</td>
-                                        <td>500</td>
+                                        <td>Electronics Product</td>
                                         <td>Active</td>
                                         <td className="icons">
                                             <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
@@ -178,4 +130,4 @@ const AddProduct = () => {
     )
 }
 
-export default AddProduct
+export default ManageSubCategory

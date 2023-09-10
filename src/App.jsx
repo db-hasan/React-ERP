@@ -5,19 +5,19 @@ import FrontHome from './Frontend/FrontHome'
 import Service from './Frontend/Service'
 import Dome from './Frontend/Dome'
 import Error from './Error'
-import Login from './Backend/Pages/Login'
+import Login from './Backend/Login'
 import Dashboard from './Backend/Dashboard'
-import Brand from './Backend/Pages/Brand'
-import Category from './Backend/Pages/Category'
-import SubCategory from './Backend/Pages/SubCategory'
-import AddProduct from './Backend/Pages/AddProduct'
-import AddSupplier from './Backend/Pages/AddSupplier'
-import PurchaesStock from './Backend/Pages/PurchaesStock'
-import RetrunProduct from './Backend/Pages/RetrunProduct'
-import DamageProduct from './Backend/Pages/DamageProduct'
-import StockInvioce from './Backend/Pages/StockInvioce'
-import RetrunInvioce from './Backend/Pages/RetrunInvioce'
-import DamageInvioce from './Backend/Pages/DamageInvioce'
+import Brand from './Backend/Pages/Category/Brand'
+import Category from './Backend/Pages/Category/Category'
+import SubCategory from './Backend/Pages/Category/SubCategory'
+import AddProduct from './Backend/Pages/Product/AddProduct'
+import AddSupplier from './Backend/Pages/Product/AddSupplier'
+import PurchaesStock from './Backend/Pages/Stock/PurchaesStock'
+import RetrunProduct from './Backend/Pages/Stock/RetrunProduct'
+import DamageProduct from './Backend/Pages/Stock/DamageProduct'
+import PurchaesInvioce from './Backend/Pages/Stock/PurchaesInvioce'
+import RetrunInvioce from './Backend/Pages/Stock/RetrunInvioce'
+import DamageInvioce from './Backend/Pages/Stock/DamageInvioce'
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
         <Route path="/PurchaesStock" element={<PurchaesStock />} />
         <Route path="/RetrunProduct" element={<RetrunProduct />} />
         <Route path="/DamageProduct" element={<DamageProduct />} />
-        <Route path="/StockInvioce" element={<StockInvioce />} />
+        <Route path="/PurchaesInvioce" element={<PurchaesInvioce />} />
         <Route path="/RetrunInvioce" element={<RetrunInvioce />} />
         <Route path="/DamageInvioce" element={<DamageInvioce />} />
 

@@ -47,7 +47,7 @@ const Sidebar = () => {
                 <div className="accordion-body"> <i className="fa-solid fa-baby-carriage"><Link to="/PurchaesStock"> Purchaes Stock</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/RetrunProduct"> Retrun Product</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-trash-can"><Link to="/DamageProduct"> Damage Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/StockInvioce"> Stock Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/PurchaesInvioce"> Stock Invioce</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-retweet"><Link to="/RetrunInvioce"> Retrun Invioce</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/DamageInvioce"> Damage Invioce</Link></i></div>
               </div>

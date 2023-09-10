@@ -1,11 +1,11 @@
 import React from 'react'
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { Link } from 'react-router-dom'
-import BackHeader from '../BackHeader'
-import BackFooter from '../BackFooter'
-import Sidebar from '../Sidebar'
+import BackHeader from '../../BackHeader'
+import BackFooter from '../../BackFooter'
+import Sidebar from '../../Sidebar'
 
-const ManageBrand = () => {
+const Categories = () => {
     return (
         <>
             <BackHeader />
@@ -22,13 +22,13 @@ const ManageBrand = () => {
                             <div className="modal-dialog">
                                 <div className="modal-content">
                                     <div className="modal-header">
-                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add Brand</h1>
+                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add Category</h1>
                                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        <form action="">
-                                            <div className="mb-3">
-                                                <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                        <form className='row g-3' action="">
+                                            <div className="">
+                                                <label for="exampleInputEmail1" className="form-label">Category Name</label>
                                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                             </div>
                                         </form>
@@ -59,7 +59,7 @@ const ManageBrand = () => {
                                     <option value="">50</option>
                                     <option value="">100</option>
                                 </select>
-                                <span className='m-2' > Entries</span>
+                                <span className='m-2'> Entries</span>
                             </div>
                             <div className="col">
                                 <div className="input-group ">
@@ -75,7 +75,7 @@ const ManageBrand = () => {
                                 <thead>
                                     <tr>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> ID</th>
-                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Brand</th>
+                                        <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Category</th>
                                         <th><a href=""><i className="fa-solid fa-right-left fa-rotate-90 fa-sm" ></i></a> Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -92,7 +92,6 @@ const ManageBrand = () => {
                                         </td>
                                     </tr>
                                 </tbody>
-
                             </table>
                         </Scrollbars>
                         <div className=''>
@@ -120,4 +119,4 @@ const ManageBrand = () => {
     )
 }
 
-export default ManageBrand
+export default Categories

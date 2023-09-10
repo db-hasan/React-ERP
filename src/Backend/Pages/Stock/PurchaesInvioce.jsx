@@ -1,9 +1,9 @@
 import React from 'react'
 
-const StockInvioce = () => {
+const PurchaesInvioce = () => {
     return (
         <div>StockInvioce</div>
     )
 }
 
-export default StockInvioce
+export default PurchaesInvioce

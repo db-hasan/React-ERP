@@ -1,9 +1,9 @@
 import React from 'react'
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { Link } from 'react-router-dom'
-import BackHeader from '../BackHeader'
-import BackFooter from '../BackFooter'
-import Sidebar from '../Sidebar'
+import BackHeader from '../../BackHeader'
+import BackFooter from '../../BackFooter'
+import Sidebar from '../../Sidebar'
 
 const AddSupplier = () => {
     return (
