@@ -21,9 +21,9 @@ const Sidebar = () => {
                 <i className="fa-solid fa-tags"><Link to="/"> Category</Link></i>
               </button>
               <div id="flush-collapse1" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-tag"><Link to="/brand"> Brands</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-layer-group"><Link to="/category"> Category</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-box"><Link to="/subcategory"> SubCategory</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-tag"><Link to="/Brand"> Brands</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-layer-group"><Link to="/Category"> Category</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-box"><Link to="/SubCategory"> SubCategory</Link></i></div>
               </div>
             </div>
 
@@ -33,8 +33,8 @@ const Sidebar = () => {
                 <i className="fa-solid fa-layer-group"><Link to="#"> Product</Link></i>
               </button>
               <div id="flush-collapse9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-plus"><Link to="/product"> Add Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="/supplier"> Add Supplier</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-plus"><Link to="/AddProduct"> Add Product</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-truck-fast"><Link to="/AddSupplier"> Add Supplier</Link></i></div>
               </div>
             </div>
 
@@ -44,7 +44,7 @@ const Sidebar = () => {
                 <i className="fa-solid fa-warehouse "><Link to="#"> Stock</Link></i>
               </button>
               <div id="flush-collapse2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body"> <i className="fa-solid fa-baby-carriage"><Link to="/stock"> Purchaes Stock</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-baby-carriage"><Link to="/PurchaesStock"> Purchaes Stock</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/"> Retrun Product</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-trash-can"><Link to="/"> Damage Product</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/stock"> Stock Invioce</Link></i></div>

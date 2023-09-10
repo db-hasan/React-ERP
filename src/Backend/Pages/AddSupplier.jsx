@@ -5,9 +5,9 @@ import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
 
-const Supplier = () => {
-  return (
-    <>
+const AddSupplier = () => {
+    return (
+        <>
             <BackHeader />
             <div className="row rows">
                 <div className="col-sm-4 col-md-3 col-lg-2">
@@ -135,7 +135,7 @@ const Supplier = () => {
             </div>
             <BackFooter />
         </>
-  )
+    )
 }
 
-export default Supplier
+export default AddSupplier

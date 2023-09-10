@@ -5,10 +5,10 @@ import BackHeader from '../BackHeader'
 import BackFooter from '../BackFooter'
 import Sidebar from '../Sidebar'
 
-const Product = () => {
-  return (
-    <>
-         <BackHeader />
+const AddProduct = () => {
+    return (
+        <>
+            <BackHeader />
             <div className="row rows">
                 <div className="col-sm-4 col-md-3 col-lg-2">
                     <Sidebar />
@@ -174,8 +174,8 @@ const Product = () => {
                 </div>
             </div>
             <BackFooter />
-    </>
-  )
+        </>
+    )
 }
 
-export default Product
+export default AddProduct
