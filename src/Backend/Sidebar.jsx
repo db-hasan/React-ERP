@@ -47,6 +47,9 @@ const Sidebar = () => {
                 <div className="accordion-body"> <i className="fa-solid fa-baby-carriage"><Link to="/stock"> Purchaes Stock</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/"> Retrun Product</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-trash-can"><Link to="/"> Damage Product</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/stock"> Stock Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-retweet"><Link to="/"> Retrun Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/"> Damage Invioce</Link></i></div>
               </div>
             </div>
 
@@ -58,7 +61,8 @@ const Sidebar = () => {
               <div id="flush-collapse3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div className="accordion-body"> <i className="fa-solid fa-cart-shopping"><Link to="/"> Sales Product</Link></i></div>
                 <div className="accordion-body"> <i className="fa-solid fa-right-left"><Link to="/"> Retrun Product</Link></i></div>
-                <div className="accordion-body"> <i className="fa-solid fa-trash-can"><Link to="/"> Damage Product</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice-dollar"><Link to="/"> Sales Invioce</Link></i></div>
+                <div className="accordion-body"> <i className="fa-solid fa-file-invoice"><Link to="/"> Retrun Invioce</Link></i></div>
               </div>
             </div>
 
