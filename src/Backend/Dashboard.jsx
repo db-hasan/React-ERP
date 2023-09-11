@@ -14,7 +14,9 @@ const Dashboard = () => {
           <Sidebar />
         </div>
         <div className="col-sm-8 col-md-9 col-lg-10 dash">
-          <img src="dashboard.png" alt="" />
+          <div>
+
+          </div>
         </div>
       </div>
       <BackFooter />
