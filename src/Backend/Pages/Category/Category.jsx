@@ -86,9 +86,51 @@ const Categories = () => {
                                         <td>Electronics Product</td>
                                         <td>Active</td>
                                         <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-toggle="modal"><i className="fa-solid fa-pen"></i></a>
-                                            <a href="" className="delete" data-toggle="modal"><i className="fa-solid fa-trash"></i></a>
+                                            <a href="" className="edit" data-bs-toggle="modal" data-bs-target="#editModal" ><i className="fa-solid fa-pen"></i></a>
+                                            <div className="modal fade mt-5" id="editModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div className="modal-dialog">
+                                                    <div className="modal-content">
+                                                        <div className="modal-header">
+                                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Edit Catagory</h1>
+                                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div className="modal-body">
+                                                            <form action="">
+                                                                <div className="mb-3 text-start">
+                                                                    <label for="exampleInputEmail1" className="form-label">Catagory Name</label>
+                                                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div className="modal-footer">
+                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" className="btn btn-primary">Update</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="" className="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i className="fa-solid fa-trash"></i></a>
+                                            <div className="modal fade mt-5" id="deleteModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div className="modal-dialog">
+                                                    <div className="modal-content">
+                                                        <div className="modal-header">
+                                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Delete Catagory</h1>
+                                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div className="modal-body">
+                                                            <form action="">
+                                                                <div className="mb-3 text-start">
+                                                                    <label for="exampleInputEmail1" className="form-label">Are you Sure !</label>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div className="modal-footer">
+                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" className="btn btn-primary">Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
