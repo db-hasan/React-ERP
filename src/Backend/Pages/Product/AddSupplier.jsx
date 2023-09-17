@@ -104,8 +104,8 @@ const AddSupplier = () => {
                                         <td>Shibgonj Bogura</td>
                                         <td>Active</td>
                                         <td className="icons">
-                                            <a href="" className="view" data-toggle="modal"><i className="fa-solid fa-eye"></i></a>
-                                            <a href="" className="edit" data-bs-toggle="modal" data-bs-target="#editModal" ><i className="fa-solid fa-pen"></i></a>
+                                            <button type="button" className="btn view" data-bs-toggle="modal" data-bs-target="#ViewModal"><i className="fa-solid fa-eye"></i></button>
+                                            <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
                                             <div className="modal fade mt-5" id="editModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div className="modal-dialog">
                                                     <div className="modal-content">
@@ -140,7 +140,7 @@ const AddSupplier = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="" className="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i className="fa-solid fa-trash"></i></a>
+                                            <button type="button" className="btn delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i className="fa-solid fa-trash"></i></button>
                                             <div className="modal fade mt-5" id="deleteModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div className="modal-dialog">
                                                     <div className="modal-content">
