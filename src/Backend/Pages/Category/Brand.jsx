@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useState, useEffect} from "react";
+import axios from "axios";
+import Swal from 'sweetalert2';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { Link } from 'react-router-dom'
 import BackHeader from '../../BackHeader'
@@ -6,6 +8,25 @@ import BackFooter from '../../BackFooter'
 import Sidebar from '../../Sidebar'
 
 const ManageBrand = () => {
+    const [brand, setBrand] = useState({
+        brand: ''
+    })
+    
+    const input = (e) => {
+        e.persist();
+        setBrand({ ...brand, [e.target.name]: e.target.value });
+    };
+    const save = (e) => {
+        e.preventDefault()
+        const data = {
+            input_brand: brand.input_brand,
+        }
+        axios.post(`http://localhost/React-ERP/api/brand/brand_insert.php`, data).then(res => {
+            Swal.fire(
+                'Brand add Successful',
+             )
+        });
+    }
     return (
         <>
             <BackHeader />
@@ -21,22 +42,22 @@ const ManageBrand = () => {
                         <div className="modal fade mt-5" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">
                                 <div className="modal-content">
-                                    <div className="modal-header">
-                                        <h1 className="modal-title fs-5" id="exampleModalLabel">Add Brand</h1>
-                                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div className="modal-body">
-                                        <form action="">
-                                            <div className="mb-3">
-                                                <label for="exampleInputEmail1" className="form-label">Brand Name</label>
-                                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" className="btn btn-primary">Save changes</button>
-                                    </div>
+                                    <form onSubmit={save}>
+                                        <div className="modal-header">
+                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Add Brand</h1>
+                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div className="modal-body">
+                                        <div className="mb-3">
+                                            <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                            <input id="exampleInputEmail1" className="form-control"  type="text" name="input_brand"  onChange={input}/>
+                                        </div>  
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" className="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
