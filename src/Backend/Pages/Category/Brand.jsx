@@ -9,14 +9,14 @@ import Sidebar from '../../Sidebar'
 
 const ManageBrand = () => {
     const [brand, setBrand] = useState({
-        brand: ''
+        name: ''
     })
     
-    const input = (e) => {
+    const handleInput = (e) => {
         e.persist();
         setBrand({ ...brand, [e.target.name]: e.target.value });
     };
-    const save = (e) => {
+    const saveBrand = (e) => {
         e.preventDefault()
         const data = {
             input_brand: brand.input_brand,
@@ -42,7 +42,7 @@ const ManageBrand = () => {
                         <div className="modal fade mt-5" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">
                                 <div className="modal-content">
-                                    <form onSubmit={save}>
+                                    <form onSubmit={saveBrand}>
                                         <div className="modal-header">
                                             <h1 className="modal-title fs-5" id="exampleModalLabel">Add Brand</h1>
                                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -50,7 +50,7 @@ const ManageBrand = () => {
                                         <div className="modal-body">
                                         <div className="mb-3">
                                             <label for="exampleInputEmail1" className="form-label">Brand Name</label>
-                                            <input id="exampleInputEmail1" className="form-control"  type="text" name="input_brand"  onChange={input}/>
+                                            <input id="exampleInputEmail1" className="form-control"  type="text" name="input_brand"  onChange={handleInput}/>
                                         </div>  
                                         </div>
                                         <div className="modal-footer">

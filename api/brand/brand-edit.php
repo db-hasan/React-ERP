@@ -4,8 +4,8 @@ $data = json_decode(file_get_contents("php://input"), true);
 
     $id = $_GET['id'];
     
-    $date = $data['date'];
-    $meal = $data[ 'meal' ];
+    $date = $data['date'];          // imput from
+    $meal = $data[ 'meal' ];        // imput from
 
 $sql = "UPDATE  meal SET
 	date = '{$date}',

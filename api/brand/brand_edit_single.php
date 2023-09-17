@@ -3,7 +3,7 @@ include "../config.php";
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM meal WHERE meal_id = {$id}";
+$sql = "SELECT * FROM brand WHERE brand_id = {$id}";
 
 $result = mysqli_query($con, $sql) or die("SQL Query Not Done.");
 
