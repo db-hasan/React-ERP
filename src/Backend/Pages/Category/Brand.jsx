@@ -8,25 +8,44 @@ import BackFooter from '../../BackFooter'
 import Sidebar from '../../Sidebar'
 
 const ManageBrand = () => {
+
+    // Brand Insert----------------------------------------------------------------------
     const [brand, setBrand] = useState({
         name: ''
     })
-    
+
     const handleInput = (e) => {
         e.persist();
         setBrand({ ...brand, [e.target.name]: e.target.value });
     };
+
     const saveBrand = (e) => {
         e.preventDefault()
-        const data = {
+        const newdata = {
             input_brand: brand.input_brand,
         }
-        axios.post(`http://localhost/React-ERP/api/brand/brand_insert.php`, data).then(res => {
+
+        axios.post(`http://localhost/React-ERP/api/brand/brand_insert.php`, newdata).then(res => {
             Swal.fire(
                 'Brand add Successful',
              )
         });
     }
+
+    // Brand View----------------------------------------------------------------------
+
+    const [brands, setBrands] = useState([]);
+
+    useEffect(() => {
+        axios.get(`http://localhost/React-ERP/api/brand/brand_view.php`).then(res => {
+            setBrands(res.data)
+            console.log(res.data)
+        });
+    }, []);
+    
+    // Brand Delete----------------------------------------------------------------------
+
+    
     return (
         <>
             <BackHeader />
@@ -102,9 +121,11 @@ const ManageBrand = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
+
+                                    {brands.map((brand) => (
                                     <tr>
-                                        <td>1111</td>
-                                        <td>Electronics Product</td>
+                                        <td>{brand.brand_id}</td>
+                                        <td>{brand.brand_name}</td>
                                         <td>Active</td>
                                         <td className="icons">
                                             <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
@@ -154,6 +175,7 @@ const ManageBrand = () => {
                                             </div>
                                         </td>
                                     </tr>
+                                    ))}
                                 </tbody>
 
                             </table>
