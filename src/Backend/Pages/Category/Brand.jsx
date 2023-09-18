@@ -39,13 +39,35 @@ const ManageBrand = () => {
     useEffect(() => {
         axios.get(`http://localhost/React-ERP/api/brand/brand_view.php`).then(res => {
             setBrands(res.data)
-            console.log(res.data)
         });
     }, []);
     
     // Brand Delete----------------------------------------------------------------------
 
-    
+   const brandDelete = (ev, brand_id) => {
+        const click = ev.currentTarget;
+        ev.preventDefault();
+        Swal.fire({
+            title: 'Are You Sure?',
+            text: 'You wonnt to be able to revert this!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it.',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                axios.get(`http://localhost/React-ERP/api/brand/brand_delete.php?id=${brand_id}`).then(res => {
+                    Swal.fire(
+                        'Successful'
+                    )
+                    click.closest("tr").remove();
+                })
+            }
+        })
+    }
+
+
     return (
         <>
             <BackHeader />
@@ -121,11 +143,10 @@ const ManageBrand = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-
-                                    {brands.map((brand) => (
+                                    {brands.map((bnd) => (
                                     <tr>
-                                        <td>{brand.brand_id}</td>
-                                        <td>{brand.brand_name}</td>
+                                        <td>{bnd.brand_id}</td>
+                                        <td>{bnd.brand_name}</td>
                                         <td>Active</td>
                                         <td className="icons">
                                             <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
@@ -151,31 +172,11 @@ const ManageBrand = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button type="button" className="btn delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i className="fa-solid fa-trash"></i></button>
-                                            <div className="modal fade mt-5" id="deleteModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div className="modal-dialog">
-                                                    <div className="modal-content">
-                                                        <div className="modal-header">
-                                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Delete Brand</h1>
-                                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div className="modal-body">
-                                                            <form action="">
-                                                                <div className="mb-3 text-start">
-                                                                    <label for="exampleInputEmail1" className="form-label">Are you Sure !</label>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div className="modal-footer">
-                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                            <button type="button" className="btn btn-primary">Delete</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                             <button type="button" onClick={(ev) => brandDelete(ev, bnd.brand_id)} className="btn delete" ><i className="fa-solid fa-trash"></i></button>
                                         </td>
                                     </tr>
                                     ))}
+                                    
                                 </tbody>
 
                             </table>
