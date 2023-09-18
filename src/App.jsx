@@ -34,8 +34,8 @@ function App() {
           <Route path="data" element={<Dome />} />
         </Route>
         <Route path="*" element={<Error />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Brand" element={<Brand />} />
         <Route path="/Category" element={<Category />} />
         <Route path="/SubCategory" element={<SubCategory />} />

@@ -11,7 +11,7 @@ const Sidebar = () => {
           <div className="accordion accordion-flush" id="accordionFlushExample">
             <div className="accordion-item custom">
               <button className="accordion-button collapsed" type="button">
-                <i className="fa-solid fa-house"> <Link to="/"> Dashboard</Link></i>
+                <i className="fa-solid fa-house"> <Link to="/Dashboard"> Dashboard</Link></i>
               </button>
             </div>
 

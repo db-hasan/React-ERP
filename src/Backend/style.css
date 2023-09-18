@@ -1,4 +1,14 @@
 /* Start Header*/
+.login {
+    background-image: url('src/assets/images/login.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+
+
+
 #header .logo {
     color: #fff !important;
     font-weight: 900 !important;
