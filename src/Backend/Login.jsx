@@ -13,7 +13,7 @@ const Login = () => {
                         <form className='row g-3'action="" method="post">
                             <h3>Login Now</h3>
                             <div className="">
-                                <label for="exampleInputEmail1" className="form-label">Email address</label>
+                                <label for="exampleInputEmail1" className="form-label">User Name</label>
                                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                             </div>
                             <div className="">
