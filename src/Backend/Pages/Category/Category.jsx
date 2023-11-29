@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from 'sweetalert2';
 import { Scrollbars } from 'react-custom-scrollbars-2';
@@ -25,10 +25,10 @@ const Categories = () => {
             input_category: category.input_category,
         }
 
-        axios.post(`http://localhost/React-ERP/api/category/category_insert.php`, newdata).then(res => {
+        axios.post(`http://localhost/React-Inventory-management/api/category/category_insert.php`, newdata).then(res => {
             Swal.fire(
                 'Category add Successful',
-             )
+            )
         });
     }
 
@@ -36,14 +36,14 @@ const Categories = () => {
     const [categorys, setCategorys] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost/React-ERP/api/category/category_view.php`).then(res => {
+        axios.get(`http://localhost/React-Inventory-management/api/category/category_view.php`).then(res => {
             setCategorys(res.data)
         });
     }, []);
 
     // Brand Delete----------------------------------------------------------------------
 
-   const categoryDelete = (ev, category_id) => {
+    const categoryDelete = (ev, category_id) => {
         const click = ev.currentTarget;
         ev.preventDefault();
         Swal.fire({
@@ -56,7 +56,7 @@ const Categories = () => {
             confirmButtonText: 'Yes, delete it.',
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.get(`http://localhost/React-ERP/api/category/category_delete.php?id=${category_id}`).then(res => {
+                axios.get(`http://localhost/React-Inventory-management/api/category/category_delete.php?id=${category_id}`).then(res => {
                     Swal.fire(
                         'Successful'
                     )
@@ -65,7 +65,7 @@ const Categories = () => {
             }
         })
     }
-    
+
 
     return (
         <>
@@ -88,10 +88,10 @@ const Categories = () => {
                                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div className="modal-body">
-                                        <div className="mb-3">
-                                            <label for="exampleInputEmail1" className="form-label">Brand Name</label>
-                                            <input id="exampleInputEmail1" className="form-control"  type="text" name="input_category"  onChange={handleInput}/>
-                                        </div>  
+                                            <div className="mb-3">
+                                                <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                                <input id="exampleInputEmail1" className="form-control" type="text" name="input_category" onChange={handleInput} />
+                                            </div>
                                         </div>
                                         <div className="modal-footer">
                                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -143,37 +143,37 @@ const Categories = () => {
                                 </thead>
                                 <tbody>
                                     {categorys.map((cat) => (
-                                    <tr>
-                                        <td>{cat.category_id}</td>
-                                        <td>{cat.category_name}</td>
-                                        <td>Active</td>
-                                        <td className="icons">
-                                            <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
-                                            <div className="modal fade mt-5" id="editModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div className="modal-dialog">
-                                                    <div className="modal-content">
-                                                        <div className="modal-header">
-                                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Edit category</h1>
-                                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div className="modal-body">
-                                                            <form action="">
-                                                                <div className="mb-3 text-start">
-                                                                    <label for="exampleInputEmail1" className="form-label">Brand Name</label>
-                                                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div className="modal-footer">
-                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                            <button type="button" className="btn btn-primary">Update</button>
+                                        <tr>
+                                            <td>{cat.category_id}</td>
+                                            <td>{cat.category_name}</td>
+                                            <td>Active</td>
+                                            <td className="icons">
+                                                <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
+                                                <div className="modal fade mt-5" id="editModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div className="modal-dialog">
+                                                        <div className="modal-content">
+                                                            <div className="modal-header">
+                                                                <h1 className="modal-title fs-5" id="exampleModalLabel">Edit category</h1>
+                                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div className="modal-body">
+                                                                <form action="">
+                                                                    <div className="mb-3 text-start">
+                                                                        <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div className="modal-footer">
+                                                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" className="btn btn-primary">Update</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                             <button type="button" onClick={(ev) => categoryDelete(ev, cat.category_id)} className="btn delete" ><i className="fa-solid fa-trash"></i></button>
-                                        </td>
-                                    </tr>
+                                                <button type="button" onClick={(ev) => categoryDelete(ev, cat.category_id)} className="btn delete" ><i className="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
                                     ))}
                                 </tbody>
                             </table>

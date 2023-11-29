@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from 'sweetalert2';
 import { Scrollbars } from 'react-custom-scrollbars-2';
@@ -25,10 +25,10 @@ const ManageBrand = () => {
             input_brand: brand.input_brand,
         }
 
-        axios.post(`http://localhost/React-ERP/api/brand/brand_insert.php`, newdata).then(res => {
+        axios.post(`http://localhost/React-Inventory-management/api/brand/brand_insert.php`, newdata).then(res => {
             Swal.fire(
                 'Brand add Successful',
-             )
+            )
         });
     }
 
@@ -37,14 +37,14 @@ const ManageBrand = () => {
     const [brands, setBrands] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost/React-ERP/api/brand/brand_view.php`).then(res => {
+        axios.get(`http://localhost/React-Inventory-management/api/brand/brand_view.php`).then(res => {
             setBrands(res.data)
         });
     }, []);
-    
+
     // Brand Delete----------------------------------------------------------------------
 
-   const brandDelete = (ev, brand_id) => {
+    const brandDelete = (ev, brand_id) => {
         const click = ev.currentTarget;
         ev.preventDefault();
         Swal.fire({
@@ -57,7 +57,7 @@ const ManageBrand = () => {
             confirmButtonText: 'Yes, delete it.',
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.get(`http://localhost/React-ERP/api/brand/brand_delete.php?id=${brand_id}`).then(res => {
+                axios.get(`http://localhost/React-Inventory-management/api/brand/brand_delete.php?id=${brand_id}`).then(res => {
                     Swal.fire(
                         'Successful'
                     )
@@ -66,8 +66,8 @@ const ManageBrand = () => {
             }
         })
     }
-    
- // Brand Edit----------------------------------------------------------------------
+
+    // Brand Edit----------------------------------------------------------------------
 
 
 
@@ -92,10 +92,10 @@ const ManageBrand = () => {
                                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div className="modal-body">
-                                        <div className="mb-3">
-                                            <label for="exampleInputEmail1" className="form-label">Brand Name</label>
-                                            <input id="exampleInputEmail1" className="form-control"  type="text" name="input_brand"  onChange={handleInput}/>
-                                        </div>  
+                                            <div className="mb-3">
+                                                <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                                <input id="exampleInputEmail1" className="form-control" type="text" name="input_brand" onChange={handleInput} />
+                                            </div>
                                         </div>
                                         <div className="modal-footer">
                                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -147,39 +147,39 @@ const ManageBrand = () => {
                                 </thead>
                                 <tbody>
                                     {brands.map((bnd) => (
-                                    <tr>
-                                        <td>{bnd.brand_id}</td>
-                                        <td>{bnd.brand_name}</td>
-                                        <td>Active</td>
-                                        <td className="icons">
-                                            <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
-                                            <div className="modal fade mt-5" id="editModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div className="modal-dialog">
-                                                    <div className="modal-content">
-                                                        <div className="modal-header">
-                                                            <h1 className="modal-title fs-5" id="exampleModalLabel">Edit Brand</h1>
-                                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div className="modal-body">
-                                                            <form action="">
-                                                                <div className="mb-3 text-start">
-                                                                    <label for="exampleInputEmail1" className="form-label">Brand Name</label>
-                                                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div className="modal-footer">
-                                                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                            <button type="button" className="btn btn-primary">Update</button>
+                                        <tr>
+                                            <td>{bnd.brand_id}</td>
+                                            <td>{bnd.brand_name}</td>
+                                            <td>Active</td>
+                                            <td className="icons">
+                                                <button type="button" className="btn edit" data-bs-toggle="modal" data-bs-target="#editModal"><i className="fa-solid fa-pen"></i></button>
+                                                <div className="modal fade mt-5" id="editModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div className="modal-dialog">
+                                                        <div className="modal-content">
+                                                            <div className="modal-header">
+                                                                <h1 className="modal-title fs-5" id="exampleModalLabel">Edit Brand</h1>
+                                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div className="modal-body">
+                                                                <form action="">
+                                                                    <div className="mb-3 text-start">
+                                                                        <label for="exampleInputEmail1" className="form-label">Brand Name</label>
+                                                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div className="modal-footer">
+                                                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" className="btn btn-primary">Update</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                             <button type="button" onClick={(ev) => brandDelete(ev, bnd.brand_id)} className="btn delete" ><i className="fa-solid fa-trash"></i></button>
-                                        </td>
-                                    </tr>
+                                                <button type="button" onClick={(ev) => brandDelete(ev, bnd.brand_id)} className="btn delete" ><i className="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
                                     ))}
-                                    
+
                                 </tbody>
 
                             </table>
